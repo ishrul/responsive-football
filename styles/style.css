@@ -20,14 +20,15 @@ body{
 }
 .header-image img{
     width: 556.01px;
-    height: 438px;
     margin-top: 100px;
 }
 .header-image:hover img{
-    transform: scale(50%);
+    transform: scale(50%) rotate(360deg);
     transition: transform 3s ease-in-out;
 }
-
+.live-button:hover{
+    transform: scale(110%)
+}
 .live-button{
     padding: 13px 44px;
     background-color: #E02C6D;
@@ -39,3 +40,129 @@ body{
     font-size: 20px;
     color: white;
 }
+/* 
+-----------
+header styles end
+--------------------------------- */
+
+/* 
+---------------
+main style start
+-----------------
+------------------ */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    grid-gap: 20px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    text-align: center;
+}
+.player-details p{
+    font-weight: 600;
+    font-size: 64;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #6C6C6C;
+}
+.thumbnail img{
+    width: 300px;
+}
+/* players style end */
+/* gallery style start */
+.container-2{
+    margin-top: 100px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align:center;
+    grid-gap: 10px;
+}
+.memories img{
+    width: 500px;
+}
+/* gallery style end */
+/* sponsers style start */
+.sponsers{
+    text-align: center;
+    margin: 150px;
+    background-color: rgb(237, 237, 243);
+    border-radius: 10px;
+}
+hr{
+    border: 1px solid rgb(115, 115, 233);
+}
+/* sponsers style end */
+/* main style end
+-------------------------
+------------------------------------ */
+
+/* footer style started 
+--------------------------------
+-----------*/
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+footer div{
+    margin-top: 40px;
+}
+.foot-img img{
+    width: 483.87px;
+}
+.icons .fab{
+    font-size: 35px;
+    color: gray;
+    background-color: rgb(218, 216, 216);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+.copyright{
+    font-size: 30px;
+}
+/* footer style end */
+/* media query start */
+@media only screen and (max-width:688px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .header-info{
+        
+        margin-left: 10%;
+    }
+    .header-image img{
+        width: 100%;
+    }
+    .players, .gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-2 h2{
+        text-align: center;
+        color: blueviolet;
+    }
+    .memories img{
+        width: 90%;
+    }
+    .sponsers{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .foot-img img{
+        width: 60%;
+    }
+}
+/* media query end */
