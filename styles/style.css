@@ -168,5 +168,6 @@ footer div{
     .header-image:hover img{
         transform: scale(50%) rotate(360deg);
         transition: transform 3s ease-in-out;
+    }
 }
 /* media query end */
